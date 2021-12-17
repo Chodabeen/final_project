@@ -35,27 +35,31 @@
 </script>
 </head>
 <body>
-<h1>자유게시판</h1>
+<h1> 한동대학대 카페 리뷰 </h1>
 
 <table id="list" width="90%">
 <tr>
 	<th>Id</th>
-	<th>Title</th>
-	<th>Writer</th>
-	<th>Content</th>
-	<th>Regdate</th>
-	<th>Category</th>
+	<th>Cafe</th>
+	<th>Drink</th>
+	<th>Price</th>
+	<th>Star</th>
+	<th>Photo</th>
+	<th>Review</th>
+	<th>Date</th>
 	<th>Edit</th>
 	<th>Delete</th>
 </tr>
 <c:forEach items="${list}" var="u">
 	<tr>
 		<td>${u.seq}</td>
-		<td>${u.title}</td>
-		<td>${u.writer}</td>
-		<td>${u.content}</td>
-		<td>${u.regdate}</td>
-		<td>${u.category}</td>
+		<td>${u.cafe}</td>
+		<td>${u.drink}</td>
+		<td>${u.price}</td>
+		<td>${u.star}</td>
+		<td>${u.photo}</td>
+		<td>${u.review}</td>
+		<td>${u.date}</td>
 		<td><a href="editpost/${u.seq}">Edit</a></td>
 		<td><a href="javascript:delete_ok('${u.seq}')">Delete</a></td>
 	</tr>
