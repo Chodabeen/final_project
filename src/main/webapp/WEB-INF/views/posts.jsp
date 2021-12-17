@@ -35,7 +35,7 @@
 </script>
 </head>
 <body>
-<h1> 한동대학대 카페 리뷰 </h1>
+<h1> 한동대 교내 카페 리뷰 </h1>
 
 <table id="list" width="90%">
 <tr>
@@ -44,7 +44,6 @@
 	<th>Drink</th>
 	<th>Price</th>
 	<th>Star</th>
-	<th>Photo</th>
 	<th>Review</th>
 	<th>Date</th>
 	<th>Edit</th>
@@ -57,7 +56,6 @@
 		<td>${u.drink}</td>
 		<td>${u.price}</td>
 		<td>${u.star}</td>
-		<td>${u.photo}</td>
 		<td>${u.review}</td>
 		<td>${u.date}</td>
 		<td><a href="editpost/${u.seq}">Edit</a></td>
